@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Date Request</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+<section id="intro" class="active">
+<div class="card">
+<h1>💌 A little surprise for you...</h1>
+<button id="openBtn">Open ❤️</button>
+</div>
+</section>
+
+<section id="question">
+<div class="card">
+<h2>Will you go on a date with me,<br>Lian Tracy Sadsad? ❤️</h2>
+<div class="row">
+<button id="yesBtn">YES ❤️</button>
+<button id="noBtn">NO 🙈</button>
+</div>
+</div>
+</section>
+
+<section id="planner">
+<div class="card">
+<h2>Let's Plan Our Date 💕</h2>
+<input id="date" type="date">
+<select id="time">
+<option value="">Choose Time</option>
+<option>5:00 PM</option>
+<option>6:00 PM</option>
+<option>6:00 PM</option>
+<option>7:00 PM</option>
+<option>8:00 PM</option>
+</select>
+<select id="food">
+<option value="">Choose Food</option>
+<option>🍜 Ramen</option>
+<option>🍝 Pasta</option>
+<option>🍕 Pizza</option>
+<option>🍣 Sushi</option>
+<option>☕ Coffee</option>
+</select>
+<button id="finishBtn">Set Our Date 💖</button>
+</div>
+</section>
+
+<section id="success">
+<div class="card">
+<h1>🎉 YAY!!</h1>
+<p id="summary"></p>
+<h3>I can't wait to see you! ❤️</h3>
+<p>— Kenji</p>
+</div>
+</section>
+
+<audio id="bgMusic" loop>
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
