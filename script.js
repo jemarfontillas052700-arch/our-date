@@ -2,13 +2,19 @@ const intro=document.getElementById('intro');
 const question=document.getElementById('question');
 const planner=document.getElementById('planner');
 const success=document.getElementById('success');
-const music=document.getElementById('bgMusic');
+const music = document.getElementById("bgMusic");
 
-openBtn.onclick=()=>{
- music.play().catch(()=>{});
- intro.classList.remove('active');
- question.classList.add('active');
-};
+openBtn.addEventListener("click", async () => {
+    try {
+        music.volume = 1;
+        await music.play();
+    } catch (e) {
+        console.log("Music blocked:", e);
+    }
+
+    intro.classList.remove("active");
+    question.classList.add("active");
+});
 
 noBtn.onmouseover=()=>{
  noBtn.style.transform=`translate(${Math.random()*180-90}px,${Math.random()*120-60}px)`;
